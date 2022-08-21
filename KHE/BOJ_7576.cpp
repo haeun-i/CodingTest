@@ -49,8 +49,6 @@ void bfs() {
 			
 			if (ny < 0 || ny >= m || nx < 0 || nx >= n) continue;
 			if (tomato[ny][nx] == 0 && checked[ny][nx] == 0) {
-				cout << ny << " " << nx << endl;
-				
 				q.push(make_pair(ny, nx));
 				checked[ny][nx] = checked[num.first][num.second] + 1;
 			}
